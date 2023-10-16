@@ -13,6 +13,7 @@
         body {
             background-color: #f5f5f5;
             color: #333;
+            font-family: Arial, sans-serif;
         }
 
         /* Header */
@@ -20,63 +21,60 @@
             background-color: #007acc;
         }
 
-        /* Heading */
-        h1,
-        h2 {
-            color: #007acc;
+        .navbar {
+            background-color: #007acc;
+            padding: 1rem;
         }
 
-        /* Links */
-        a {
-            color: #007acc;
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
         }
 
-        a:hover {
+        .navbar a:hover {
             color: #0056b3;
         }
 
-        /* Style for the dropdown menu */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
+        /* Improve the image display */
+        .profile-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1 class="header-bg text-white p-3 text-center">Caleb Cheruiyot</h1>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="links.html">Links</a>
+            <a href="projects.html">Projects</a>
+            <a href="contacts.html">Contacts</a>
+        </nav>
     </header>
 
     <div class="container mt-4">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li class="dropdown"><a href="#">About Me</a>
-                    <ul class="dropdown-content">
-                        <li><a href="interests.html">Interests</a></li>
-                        <li><a href="technical.html">Technical Background</a></li>
-                        <li><a href="hobbies.html">Hobbies</a></li>
-                    </ul>
-                </li>
-                <li><a href="links.html">Links</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
+        <div class="row mt-4">
+            <div class="col-md-4 text-center">
+                <img src="https://raw.githubusercontent.com/Calebcheruiyc/Cheruiyck/main/DSC_0008.JPG" alt="Caleb Cheruiyot's Profile Image" class="profile-image">
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Personal Portfolio</h2>
+                        <p class="card-text">
+                            This is where you can learn more about me and my experience. I am a seasoned computer scientist with a passion for innovation and a track record of excellence in the tech industry. With three years of experience, I have honed my skills in software development, database management, system administration, machine learning, and data analysis. I have actively contributed to the maintenance of systems and website developments. Lately, I have been involved in the onboarding of government services to eCitizens in my country, Kenya.
+                        </p>
+                        <p class="card-text">
+                            My commitment to staying at the forefront of technological advancements has driven me to continuously explore new frontiers, seeking out creative solutions to complex challenges. As a dedicated professional, I am driven by the belief that technology can transform our world, and I am excited to be a part of this transformative journey. Please explore my portfolio to learn more about me and my background in the ever-evolving field of technology.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
